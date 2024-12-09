@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejsproject
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodejsproject
+  template:
+    metadata:
+      labels:
+        app: nodejsproject
+    spec:
+      containers:
+      - name: nodejs-app
+        image: example/nodejsproject:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: "dev"

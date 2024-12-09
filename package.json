@@ -1,0 +1,15 @@
+{
+  "name": "nodejsproject",
+  "version": "1.0.0",
+  "description": "A Node.js app",
+  "main": "\t",
+  "scripts": {
+    "test": "jst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\t"
+  },
+  "author": "Anitha",
+  "license": "ISC"
+}
